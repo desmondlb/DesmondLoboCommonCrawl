@@ -14,12 +14,12 @@ To make the search more better I use the NLTK library to remove the stopwords an
 
 Following were the challenges I faces.
 
-###Challenge: 
+### Challenge: 
 Creating the appropriate corpus containing the relevant words to search, and writitng a function that gives a clean output of the html page (Using Beautifulsoup).
-
-###Failed approach. 
+ 
+### Failed approach. 
 Initially I tried to use a fuzzy text matching library called "fuzzywuzzy" which can be used to detect string similarity. However, in the end I resorted to just checking if a word is present in the corpus. This was because fuzzywuzzy would take O(n) time each time to get the higest scoring matches.
 
-###Assumptions:
+### Assumptions:
 One key assumption that I used to reduce the search space is that if we go through 80% of the html page content and still not find anything we can just assume that the page is not related to the topic.
 
