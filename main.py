@@ -39,5 +39,5 @@ for (i1, i2) in file_ids:
             res.update(match_set)
             print(match_set)
             with open("output.txt", "w+") as f:
-                f.write("\n".join(match_set) + " Months: " + i1)
+                f.write("Months {li} \n".join(match_set))
                 f.flush
